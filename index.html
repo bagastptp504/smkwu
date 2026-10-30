@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK WIHDATUL UMMAH - Berkarakter, Kreatif, dan Siap Bersaing di Dunia Kerja</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ================= TOP NAVBAR ================= -->
+  <header class="top-navbar">
+    <div class="container nav-container">
+      <!-- School Logo & Title -->
+      <a href="/" class="brand-wrapper">
+        <img src="/images/logo.png" alt="Logo SMK Wihdatul Ummah" class="brand-logo">
+        <div class="brand-text">
+          <h1 class="school-sub-text">SEKOLAH MENENGAH KEJURUAN</h1>
+          <h2 class="school-name-text">WIHDATUL UMMAH</h2>
+          <p class="school-address-text">Jl. Bromo 2 Raya No.51, Kel. Banjarsari, Surakarta.</p>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link active">Beranda</a></li>
+          <li><a href="javascript:void(0)" onclick="openProfileModal()" class="nav-link">Profil</a></li>
+          <li><a href="#program-keahlian" class="nav-link">Program Keahlian</a></li>
+          <li><a href="#program-sekolah" class="nav-link">Kesiswaan</a></li>
+          <li><a href="#fasilitas" class="nav-link">Fasilitas</a></li>
+          <li><a href="javascript:void(0)" onclick="openAllNewsModal()" class="nav-link">Berita</a></li>
+          <li><a href="javascript:void(0)" onclick="openPPDBModal('form')" class="nav-link btn-ppdb">PPDB</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search & Admin Button -->
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="text" id="globalSearchInput" placeholder="Cari informasi...">
+          <span class="search-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+        </div>
+        <a href="/admin" class="btn-admin-nav" title="Buka Admin Panel">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+          <span>Admin</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO BANNER ================= -->
+  <section class="hero-section">
+    <div class="hero-pattern"></div>
+    <div class="container hero-grid">
+      <!-- Left Hero Content -->
+      <div class="hero-content">
+        <div class="hero-badge-small" id="heroBadge">Selamat Datang di</div>
+        <h1 class="hero-title" id="heroTitle">SMK WIHDATUL UMMAH</h1>
+        <p class="hero-subtitle" id="heroSubtitle">Berkarakter, Kreatif, dan Siap Bersaing di Dunia Kerja</p>
+
+        <!-- 4 Feature Highlights -->
+        <div class="hero-features">
+          <div class="hero-feature-pill">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+            </div>
+            <span>Program Unggulan</span>
+          </div>
+
+          <div class="hero-feature-pill">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="12" x="3" y="4" rx="2"></rect><line x1="2" x2="22" y1="20" y2="20"></line></svg>
+            </div>
+            <span>Fasilitas Modern</span>
+          </div>
+
+          <div class="hero-feature-pill">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <span>Tenaga Pendidik Profesional</span>
+          </div>
+
+          <div class="hero-feature-pill">
+            <div class="hero-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <span>Lulusan Berkualitas</span>
+          </div>
+        </div>
+
+        <!-- Hero CTA Button -->
+        <button class="hero-cta-btn" onclick="openProfileModal()">
+          <span>Kenali Lebih Dekat</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Right Hero Visual -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-visual-card">
+          <img src="/images/banner-reference.jpg" alt="Siswa SMK Wihdatul Ummah" class="hero-main-img" id="heroImg">
+          <div class="hero-slogan-sticker" id="heroSlogan">
+            <span>Saatnya</span> Bergabung Jadi Bagian dari Sekolah Hebat!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3-COLUMN MAIN SECTION ================= -->
+  <main class="main-content-section">
+    <div class="container three-column-grid">
+
+      <!-- Column 1: Program Keahlian -->
+      <div class="section-column" id="program-keahlian">
+        <div class="col-header">
+          <div class="col-header-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="col-header-text">
+            <h3>Program Keahlian</h3>
+            <p>Siap mencetak lulusan yang kompeten dan berdaya saing</p>
+          </div>
+        </div>
+
+        <!-- Green Box: Program Upskilling -->
+        <div class="upskilling-box">
+          <div class="box-title">PROGRAM UPSKILLING</div>
+          <div class="skills-check-grid" id="upskillingList">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Orange Box: Ekstrakurikuler -->
+        <div class="ekskul-box">
+          <div class="box-title">EKSTRAKURIKULER</div>
+          <div class="skills-check-grid" id="ekskulList">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Program Sekolah -->
+      <div class="section-column" id="program-sekolah">
+        <div class="col-header">
+          <div class="col-header-icon cyan-bg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <div class="col-header-text">
+            <h3>Program Sekolah</h3>
+            <p>Kegiatan dan program unggulan untuk mengembangkan potensi siswa</p>
+          </div>
+        </div>
+
+        <!-- 4 Grid Cards -->
+        <div class="program-cards-grid" id="programSekolahList">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Column 3: Berita Terbaru -->
+      <div class="section-column" id="berita">
+        <div class="news-header-wrapper">
+          <div class="news-header-left">
+            <div class="col-header-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+            </div>
+            <div class="col-header-text">
+              <h3>Berita Terbaru</h3>
+            </div>
+          </div>
+          <span class="see-all-link" onclick="openAllNewsModal()">
+            <span>Lihat Semua</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </div>
+
+        <!-- News list container -->
+        <div class="news-list" id="newsList">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= FASILITAS SEKOLAH BANNER ================= -->
+  <section class="fasilitas-section" id="fasilitas">
+    <div class="container">
+      <div class="fasilitas-banner-card">
+        <!-- Left info card -->
+        <div class="fasilitas-info-col">
+          <div class="fasilitas-icon-main">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+          </div>
+          <div>
+            <h3>Fasilitas Sekolah</h3>
+            <p>Didukung fasilitas lengkap dan modern untuk menunjang proses belajar mengajar</p>
+          </div>
+        </div>
+
+        <!-- 8 Horizontal facility items -->
+        <div class="fasilitas-items-grid" id="fasilitasItems">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER / CONTACT BAR ================= -->
+  <footer class="site-footer" id="kontak">
+    <div class="container footer-inner">
+      <!-- Phone numbers -->
+      <div class="footer-contact-group">
+        <div class="contact-phone-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span id="phoneSara">0895 3599 5604 : Bu Sara</span>
+        </div>
+        <div class="contact-phone-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span id="phoneAna">0813 3604 3338 : Bu Ana</span>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social-group">
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <span id="fbName">ponpes wihdatulummah</span>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          <span id="igName">smkponpes_wihdatulummah</span>
+        </a>
+      </div>
+
+      <!-- Right Logo & Identity -->
+      <div class="footer-brand-badge">
+        <img src="/images/logo.png" alt="Logo SMK" class="footer-logo">
+        <div class="footer-brand-text">
+          <h4 class="school-name-text">SMK WIHDATUL UMMAH</h4>
+          <p>Berkarakter, Kreatif, dan Siap Bersaing di Dunia Kerja</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL: PROFIL SEKOLAH ================= -->
+  <div class="modal-overlay" id="profileModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Profil & Sambutan Kepala Sekolah</h3>
+        <button class="modal-close-btn" onclick="closeModal('profileModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="profileContent">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: DETAIL BERITA ================= -->
+  <div class="modal-overlay" id="newsDetailModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Kabar & Berita Sekolah</h3>
+        <button class="modal-close-btn" onclick="closeModal('newsDetailModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="newsDetailContent">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: SEMUA BERITA ================= -->
+  <div class="modal-overlay" id="allNewsModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Semua Berita & Kegiatan Sekolah</h3>
+        <button class="modal-close-btn" onclick="closeModal('allNewsModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="news-list" id="allNewsListContainer">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: DETAIL PROGRAM SEKOLAH ================= -->
+  <div class="modal-overlay" id="programDetailModal">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <div class="modal-header">
+        <h3>Program Sekolah Unggulan</h3>
+        <button class="modal-close-btn" onclick="closeModal('programDetailModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="programDetailContent">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: PPDB TERINTEGRASI GOOGLE FORM ================= -->
+  <div class="modal-overlay" id="ppdbModal">
+    <div class="modal-dialog" style="max-width: 900px;">
+      <div class="modal-header">
+        <h3>PPDB Online - SMK Wihdatul Ummah</h3>
+        <button class="modal-close-btn" onclick="closeModal('ppdbModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Tab Navigation -->
+        <div class="ppdb-tabs">
+          <button class="ppdb-tab-btn active" id="tabBtn_form" onclick="switchPPDBTab('form')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Formulir Pendaftaran Langsung
+          </button>
+          <button class="ppdb-tab-btn" id="tabBtn_gform" onclick="switchPPDBTab('gform')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="8" y1="16" x2="16" y2="16"></line><circle cx="9" cy="8" r="1"></circle></svg>
+            Google Form Terintegrasi
+          </button>
+          <button class="ppdb-tab-btn" id="tabBtn_check" onclick="switchPPDBTab('check')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            Cek Status Pendaftar
+          </button>
+        </div>
+
+        <!-- TAB 1: FORM PENDAFTARAN INTERNAL -->
+        <div class="ppdb-tab-pane" id="tabPane_form">
+          <form id="ppdbInternalForm">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Nama Lengkap Calon Siswa *</label>
+                <input type="text" name="fullName" placeholder="Contoh: Muhammad Raihan Pratama" required>
+              </div>
+              <div class="form-group">
+                <label>NISN (Nomor Induk Siswa Nasional) *</label>
+                <input type="text" name="nisn" placeholder="10 digit NISN" maxlength="10" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Jenis Kelamin *</label>
+                <select name="gender" required>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Tempat, Tanggal Lahir *</label>
+                <div style="display: flex; gap: 8px;">
+                  <input type="text" name="birthPlace" placeholder="Kota Lahir" required style="flex: 1;">
+                  <input type="date" name="birthDate" required style="flex: 1;">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Asal Sekolah (SMP / MTs) *</label>
+                <input type="text" name="originSchool" placeholder="Contoh: SMP Negeri 1 Surakarta" required>
+              </div>
+              <div class="form-group">
+                <label>Pilihan Program Keahlian *</label>
+                <select name="majorChoice" required>
+                  <option value="Web Design & Digital Marketing">Web Design & Digital Marketing</option>
+                  <option value="Graphic Design & Multimedia">Graphic Design & Multimedia</option>
+                  <option value="Video & Fotografi (Sinematografi)">Video & Fotografi (Sinematografi)</option>
+                  <option value="Audio & Video Editing">Audio & Video Editing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Nama Orang Tua / Wali *</label>
+                <input type="text" name="parentName" placeholder="Nama Ayah / Ibu / Wali" required>
+              </div>
+              <div class="form-group">
+                <label>No. Handphone / WhatsApp Aktif *</label>
+                <input type="tel" name="phone" placeholder="Contoh: 081234567890" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Jalur Pendaftaran *</label>
+                <select name="pathway" required>
+                  <option value="Reguler">Jalur Reguler</option>
+                  <option value="Prestasi">Jalur Prestasi (Akademik / Non-Akademik)</option>
+                  <option value="Afirmasi">Jalur Afirmasi (Keluarga Prasejahtera)</option>
+                  <option value="Tahfidz">Jalur Khusus Tahfidzul Qur'an</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Alamat Lengkap Tempat Tinggal *</label>
+                <input type="text" name="address" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit-ppdb">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Kirim Formulir Pendaftaran Sekarang</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- TAB 2: GOOGLE FORM INTEGRATED -->
+        <div class="ppdb-tab-pane" id="tabPane_gform" style="display: none;">
+          <div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; background: #f0fdf4; padding: 10px 14px; border-radius: 8px;">
+            <span style="font-size: 13px; color: #166534; font-weight: 600;">
+              Formulir Pendataan Resmi Terhubung dengan Google Form & Google Spreadsheet Sekolah.
+            </span>
+            <a id="gformDirectLink" href="#" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 700; color: #0a5c36; text-decoration: underline;">
+              Buka di Tab Baru ↗
+            </a>
+          </div>
+          <iframe id="googleFormIframe" src="about:blank" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 8px; border: 1px solid #d1d5db; background: #fff;">Memuat Formulir Google Form...</iframe>
+        </div>
+
+        <!-- TAB 3: CEK STATUS PENDAFTAR -->
+        <div class="ppdb-tab-pane" id="tabPane_check" style="display: none;">
+          <form id="checkStatusForm" style="margin-bottom: 20px;">
+            <label style="font-size: 13px; font-weight: 700; color: #374151; display: block; margin-bottom: 6px;">
+              Masukkan NISN atau Nomor Pendaftaran Anda:
+            </label>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" name="queryInput" placeholder="Contoh: PPDB-2026-001 atau 0082910293" required style="flex: 1; padding: 10px 14px; border-radius: 8px; border: 1px solid #d1d5db; font-size: 13px;">
+              <button type="submit" style="padding: 10px 20px; background: #0a5c36; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer;">Cek Status</button>
+            </div>
+          </form>
+
+          <div id="statusCheckResult">
+            <p style="color: #6b7280; font-size: 13px;">Ketikkan NISN atau Nomor Pendaftaran untuk melihat status seleksi berkas dan penerimaan.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: BUKTI REGISTRASI BERHASIL ================= -->
+  <div class="modal-overlay" id="regSlipModal">
+    <div class="modal-dialog" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3>Bukti Pendaftaran PPDB</h3>
+        <button class="modal-close-btn" onclick="closeModal('regSlipModal')">&times;</button>
+      </div>
+      <div class="modal-body" id="regSlipContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

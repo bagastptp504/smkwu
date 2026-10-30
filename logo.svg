@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a5c36"/>
+      <stop offset="100%" stop-color="#043920"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Islamic 8-Point Star (Rub el Hizb) -->
+  <g transform="translate(120,120)">
+    <!-- Square 1 -->
+    <rect x="-95" y="-95" width="190" height="190" rx="16" fill="url(#greenGrad)" stroke="url(#goldGrad)" stroke-width="6"/>
+    <!-- Square 2 rotated 45 deg -->
+    <rect x="-95" y="-95" width="190" height="190" rx="16" fill="url(#greenGrad)" stroke="url(#goldGrad)" stroke-width="6" transform="rotate(45)"/>
+    
+    <!-- Inner Gold Ring -->
+    <circle r="76" fill="#043920" stroke="url(#goldGrad)" stroke-width="4"/>
+    
+    <!-- Central Shield / Emblem -->
+    <!-- Open Book / Qur'an -->
+    <path d="M -45,15 Q -20,-10 0,5 Q 20,-10 45,15 L 45,35 Q 20,15 0,25 Q -20,15 -45,35 Z" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5"/>
+    <!-- Pages lines -->
+    <path d="M -38,18 Q -20,-3 -4,11 M -38,25 Q -20,4 -4,18 M 38,18 Q 20,-3 4,11 M 38,25 Q 20,4 4,18" stroke="#0a5c36" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Golden Star & Crescent on top -->
+    <path d="M -15,-40 A 24 24 0 1 0 25,-10 A 20 20 0 1 1 -15,-40 Z" fill="url(#goldGrad)"/>
+    <!-- Small star inside crescent -->
+    <polygon points="12,-28 15,-20 23,-20 17,-15 19,-7 12,-12 5,-7 7,-15 1,-20 9,-20" fill="#ffffff"/>
+    
+    <!-- Gear / Industry Vocation symbol -->
+    <circle cx="0" cy="-5" r="14" fill="none" stroke="#fbbf24" stroke-width="3" stroke-dasharray="4 2"/>
+    <circle cx="0" cy="-5" r="6" fill="#fbbf24"/>
+  </g>
+</svg>

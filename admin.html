@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - SMK WIHDATUL UMMAH</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <!-- ================= LOGIN SCREEN ================= -->
+  <div id="loginScreen">
+    <div class="login-card">
+      <img src="/images/logo.png" alt="Logo" class="login-logo">
+      <h2>Admin Panel SMK</h2>
+      <p>SMK WIHDATUL UMMAH SURAKARTA</p>
+
+      <form id="loginForm">
+        <div class="form-group-login">
+          <label>Username</label>
+          <input type="text" name="username" value="admin" required placeholder="Masukkan username admin">
+        </div>
+        <div class="form-group-login">
+          <label>Password</label>
+          <input type="password" name="password" value="admin123" required placeholder="Masukkan password">
+        </div>
+        <button type="submit" class="btn-login">Masuk ke Dashboard</button>
+      </form>
+
+      <div class="login-hint">
+        <strong>Login Bawaan:</strong><br>
+        Username: <code>admin</code> | Password: <code>admin123</code><br>
+        <em>(Dapat diganti di menu Pengaturan Akun)</em>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ADMIN DASHBOARD ================= -->
+  <div id="adminApp">
+    <div class="admin-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="admin-sidebar">
+        <div class="sidebar-header">
+          <img src="/images/logo.png" alt="Logo" class="sidebar-logo">
+          <div class="sidebar-header-text">
+            <h3>SMK WIHDATUL UMMAH</h3>
+            <p>Admin Control Panel</p>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <button class="sidebar-btn active" data-tab="tab-dashboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>
+            <span>Dashboard</span>
+          </button>
+
+          <div class="nav-section-title">PPDB & Pendaftaran</div>
+          <button class="sidebar-btn" data-tab="tab-ppdb">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Data Pendaftar PPDB</span>
+          </button>
+          <button class="sidebar-btn" data-tab="tab-googleform">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="8" y1="16" x2="16" y2="16"></line><circle cx="9" cy="8" r="1"></circle></svg>
+            <span>Google Form & Sheet</span>
+          </button>
+
+          <div class="nav-section-title">Konten & Publikasi</div>
+          <button class="sidebar-btn" data-tab="tab-news">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
+            <span>Posting Berita</span>
+          </button>
+
+          <div class="nav-section-title">CMS Tampilan & Gambar</div>
+          <button class="sidebar-btn" data-tab="tab-cms-hero">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span>Ganti Hero & Banner</span>
+          </button>
+          <button class="sidebar-btn" data-tab="tab-cms-profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Profil & Visi Misi</span>
+          </button>
+          <button class="sidebar-btn" data-tab="tab-cms-programs">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+            <span>Program & Keahlian</span>
+          </button>
+          <button class="sidebar-btn" data-tab="tab-cms-fasilitas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path></svg>
+            <span>Fasilitas Sekolah</span>
+          </button>
+          <button class="sidebar-btn" data-tab="tab-cms-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Kontak & Medsos</span>
+          </button>
+
+          <div class="nav-section-title">Sistem</div>
+          <button class="sidebar-btn" data-tab="tab-account">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Pengaturan Akun</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="sidebar-btn" onclick="adminLogout()" style="color: #fca5a5;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Keluar (Logout)</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="admin-main">
+        <!-- TOPBAR -->
+        <header class="admin-topbar">
+          <div class="topbar-left">
+            <h2 id="topbarTitle">Dashboard</h2>
+          </div>
+          <div class="topbar-right">
+            <a href="/" target="_blank" class="btn-outline-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <span>Lihat Website</span>
+            </a>
+            <button class="btn-primary-sm" onclick="openAddNewsModal()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Tulis Berita Baru</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="admin-body">
+
+          <!-- ================= TAB 1: DASHBOARD OVERVIEW ================= -->
+          <div class="admin-tab-pane active" id="tab-dashboard">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div class="stat-info">
+                  <h4>Total Pendaftar PPDB</h4>
+                  <div class="stat-number" id="statTotalPPDB">0</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon" style="background: #dcfce7; color: #16a34a;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div class="stat-info">
+                  <h4>Siswa Lulus / Diterima</h4>
+                  <div class="stat-number" id="statAcceptedPPDB">0</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon" style="background: #e0f2fe; color: #0284c7;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path></svg>
+                </div>
+                <div class="stat-info">
+                  <h4>Total Berita & Kabar</h4>
+                  <div class="stat-number" id="statTotalNews">0</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon" style="background: #fef3c7; color: #d97706;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path></svg>
+                </div>
+                <div class="stat-info">
+                  <h4>Total Fasilitas</h4>
+                  <div class="stat-number" id="statTotalFasilitas">0</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Applicants -->
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Pendaftar PPDB Terbaru</h3>
+                <button class="btn-outline-sm" onclick="document.querySelector('[data-tab=tab-ppdb]').click()">Lihat Semua Pendaftar &rarr;</button>
+              </div>
+              <div class="table-responsive">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>No. Pendaftaran</th>
+                      <th>Nama Calon Siswa</th>
+                      <th>Pilihan Jurusan</th>
+                      <th>Status</th>
+                      <th>Tanggal</th>
+                    </tr>
+                  </thead>
+                  <tbody id="recentPPDBTbody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TAB 2: DATA PENDAFTAR PPDB ================= -->
+          <div class="admin-tab-pane" id="tab-ppdb">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Data Lengkap Peserta Didik Baru (PPDB)</h3>
+                <div style="display: flex; gap: 8px;">
+                  <a href="/api/admin/export-ppdb" class="btn-outline-sm" download>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <span>Download Rekap Excel (CSV)</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Filter controls -->
+              <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+                <input type="text" id="searchPPDBInput" oninput="filterPPDB()" placeholder="Cari nama, NISN, atau no pendaftaran..." style="flex: 1; min-width: 200px; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); font-size: 13px;">
+                <select id="filterMajorSelect" onchange="filterPPDB()" style="padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); font-size: 13px;">
+                  <option value="">Semua Jurusan</option>
+                  <option value="Web Design & Digital Marketing">Web Design & Digital Marketing</option>
+                  <option value="Graphic Design & Multimedia">Graphic Design & Multimedia</option>
+                  <option value="Video & Fotografi (Sinematografi)">Video & Fotografi</option>
+                  <option value="Audio & Video Editing">Audio & Video Editing</option>
+                </select>
+                <select id="filterStatusSelect" onchange="filterPPDB()" style="padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); font-size: 13px;">
+                  <option value="">Semua Status</option>
+                  <option value="Menunggu Verifikasi">Menunggu Verifikasi</option>
+                  <option value="Diterima">Diterima</option>
+                  <option value="Perlu Lengkapi Berkas">Perlu Lengkapi Berkas</option>
+                </select>
+              </div>
+
+              <!-- Table -->
+              <div class="table-responsive">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>No. Daftar</th>
+                      <th>Calon Siswa</th>
+                      <th>Asal Sekolah</th>
+                      <th>Jurusan</th>
+                      <th>No. HP / WA</th>
+                      <th>Status</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ppdbFullTbody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TAB 3: GOOGLE FORM & SHEET INTEGRATION ================= -->
+          <div class="admin-tab-pane" id="tab-googleform">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Integrasi Google Form & Google Spreadsheet</h3>
+              </div>
+              <p style="font-size: 13px; color: #475569; margin-bottom: 20px; line-height: 1.6;">
+                Sistem ini terhubung langsung dengan Google Form dan Google Sheets. Anda dapat menautkan Google Form pendaftaran resmi sekolah dan melihat respon spreadsheet pendaftar secara langsung di bawah ini tanpa perlu membuka tab lain!
+              </p>
+
+              <form id="googleFormSettingsForm">
+                <div class="form-group-admin">
+                  <label>1. URL Google Form untuk Embed (Iframe)</label>
+                  <input type="url" name="googleFormEmbedUrl" placeholder="https://docs.google.com/forms/d/e/.../viewform?embedded=true" required>
+                  <small style="color: #64748b; font-size: 11px;">Dapatkan link ini dari menu Kirim di Google Form &rarr; Tab HTML Embed (&lt;&gt;)</small>
+                </div>
+
+                <div class="form-group-admin">
+                  <label>2. URL Google Form Publik (Buka Tab Baru)</label>
+                  <input type="url" name="googleFormPublicUrl" placeholder="https://forms.gle/... atau https://docs.google.com/forms/d/e/.../viewform" required>
+                  <small style="color: #64748b; font-size: 11px;">Link langsung untuk dibagikan kepada calon siswa via WhatsApp atau medsos.</small>
+                </div>
+
+                <div class="form-group-admin">
+                  <label>3. URL Google Sheet Respon Pendaftar (Untuk Melihat Siapa yang Sudah Mendaftar)</label>
+                  <input type="url" name="googleSheetViewUrl" placeholder="https://docs.google.com/spreadsheets/d/.../pubhtml atau link share spreadsheet" required>
+                  <small style="color: #64748b; font-size: 11px;">Di Google Form &rarr; tab Jawaban &rarr; Buka di Spreadsheet &rarr; File &rarr; Bagikan atau Publikasikan ke Web.</small>
+                </div>
+
+                <button type="submit" class="btn-primary-sm" style="padding: 10px 20px;">
+                  Simpan Pengaturan Google Form
+                </button>
+              </form>
+            </div>
+
+            <!-- Live Google Sheet Viewer -->
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Live Viewer Respon Google Sheet / Formulir</h3>
+                <span class="badge badge-green">Tersinkronisasi</span>
+              </div>
+              <p style="font-size: 12px; color: #64748b; margin-bottom: 12px;">Data respon formulir dari Google Sheet pendaftar langsung tampil di panel bawah ini:</p>
+              <iframe id="adminGoogleSheetPreview" src="about:blank" width="100%" height="450" style="border: 1px solid var(--border); border-radius: 8px; background: #fff;"></iframe>
+            </div>
+          </div>
+
+          <!-- ================= TAB 4: POSTING BERITA ================= -->
+          <div class="admin-tab-pane" id="tab-news">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Daftar Berita & Informasi Sekolah</h3>
+                <button class="btn-primary-sm" onclick="openAddNewsModal()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  <span>Tambah Berita</span>
+                </button>
+              </div>
+
+              <div class="table-responsive">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 70px;">Foto</th>
+                      <th>Judul Berita</th>
+                      <th>Kategori</th>
+                      <th>Tanggal</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="newsAdminTbody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TAB 5: GANTI HERO & BANNER (CMS) ================= -->
+          <div class="admin-tab-pane" id="tab-cms-hero">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Ganti Gambar & Teks Hero Banner Beranda</h3>
+              </div>
+              <form id="heroSettingsForm">
+                <div class="form-grid-2">
+                  <div>
+                    <div class="form-group-admin">
+                      <label>Judul Utama (Title)</label>
+                      <input type="text" name="heroTitle" required>
+                    </div>
+                    <div class="form-group-admin">
+                      <label>Subjudul (Tagline)</label>
+                      <input type="text" name="heroSubtitle" required>
+                    </div>
+                    <div class="form-group-admin">
+                      <label>Teks Badge Kecil</label>
+                      <input type="text" name="heroBadge" required>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-group-admin">
+                      <label>Gambar Hero Siswa & Gedung (URL atau Upload Baru)</label>
+                      <div style="display: flex; gap: 8px; margin-bottom: 8px;">
+                        <input type="text" id="heroImageInput" name="heroImage" required style="flex: 1;">
+                      </div>
+                      <div style="background: #f8fafc; padding: 12px; border: 1px dashed #cbd5e1; border-radius: 8px;">
+                        <label style="font-size: 11px; font-weight: 700; color: #475569;">Unggah Foto Dari Laptop/HP:</label>
+                        <input type="file" accept="image/*" onchange="uploadImageFile(this, 'heroImageInput', 'heroPreviewImg')">
+                      </div>
+                      <img id="heroPreviewImg" src="/images/banner-reference.jpg" class="img-preview-box">
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-primary-sm" style="padding: 10px 20px; margin-top: 10px;">
+                  Simpan Perubahan Banner
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- ================= TAB 6: PROFIL & VISI MISI (CMS) ================= -->
+          <div class="admin-tab-pane" id="tab-cms-profile">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Ganti Profil Sekolah, Foto & Sambutan Kepala Sekolah</h3>
+              </div>
+              <form id="profileSettingsForm">
+                <div class="form-grid-2">
+                  <div>
+                    <div class="form-group-admin">
+                      <label>Nama Kepala Sekolah</label>
+                      <input type="text" name="namaKepala" required>
+                    </div>
+                    <div class="form-group-admin">
+                      <label>NIP Kepala Sekolah</label>
+                      <input type="text" name="nipKepala">
+                    </div>
+                    <div class="form-group-admin">
+                      <label>Foto Kepala Sekolah</label>
+                      <input type="text" id="fotoKepalaInput" name="fotoKepala" required style="margin-bottom: 8px;">
+                      <div style="background: #f8fafc; padding: 10px; border: 1px dashed #cbd5e1; border-radius: 8px; margin-bottom: 8px;">
+                        <input type="file" accept="image/*" onchange="uploadImageFile(this, 'fotoKepalaInput', 'kepalaPreviewImg')">
+                      </div>
+                      <img id="kepalaPreviewImg" src="" style="width: 110px; height: 140px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border);">
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-group-admin">
+                      <label>Sambutan Kepala Sekolah</label>
+                      <textarea name="sambutanKepala" rows="8" required></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 20px 0;">
+
+                <div class="form-group-admin">
+                  <label>Visi Sekolah</label>
+                  <textarea name="visi" rows="2" required></textarea>
+                </div>
+
+                <div class="form-group-admin">
+                  <label>Misi Sekolah (Pisahkan setiap poin misi dengan baris baru / Enter)</label>
+                  <textarea name="misi" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary-sm" style="padding: 10px 20px;">
+                  Simpan Perubahan Profil
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- ================= TAB 7: PROGRAM KEAHLIAN & PROGRAM SEKOLAH (CMS) ================= -->
+          <div class="admin-tab-pane" id="tab-cms-programs">
+            <div class="form-grid-2">
+              <!-- Left: Program Upskilling & Ekskul -->
+              <div class="panel-card">
+                <div class="panel-card-header">
+                  <h3>Program Upskilling & Ekskul</h3>
+                </div>
+                <form id="programKeahlianForm">
+                  <div class="form-group-admin">
+                    <label>Daftar Program Upskilling (1 baris per skill)</label>
+                    <textarea id="upskillingTextarea" rows="6" required></textarea>
+                  </div>
+                  <div class="form-group-admin">
+                    <label>Daftar Ekstrakurikuler (1 baris per ekskul)</label>
+                    <textarea id="ekskulTextarea" rows="6" required></textarea>
+                  </div>
+                  <button type="submit" class="btn-primary-sm">Simpan Program Keahlian</button>
+                </form>
+              </div>
+
+              <!-- Right: 4 School Program Cards -->
+              <div class="panel-card">
+                <div class="panel-card-header">
+                  <h3>4 Kartu Program Sekolah (Gambar & Judul)</h3>
+                </div>
+                <div id="programSekolahAdminCards">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TAB 8: FASILITAS SEKOLAH (CMS) ================= -->
+          <div class="admin-tab-pane" id="tab-cms-fasilitas">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Kelola Fasilitas Sekolah</h3>
+                <button class="btn-primary-sm" onclick="openAddFasModal()">+ Tambah Fasilitas</button>
+              </div>
+
+              <div class="table-responsive">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 50px;">ID</th>
+                      <th>Nama Fasilitas</th>
+                      <th>Kode Ikon</th>
+                      <th>Deskripsi</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="fasilitasAdminTbody">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TAB 9: KONTAK & MEDSOS (CMS) ================= -->
+          <div class="admin-tab-pane" id="tab-cms-contact">
+            <div class="panel-card">
+              <div class="panel-card-header">
+                <h3>Pengaturan Kontak & Media Sosial Footer</h3>
+              </div>
+              <form id="contactSettingsForm">
+                <div class="form-grid-2">
+                  <div class="form-group-admin">
+                    <label>Nomor Telepon/WA Bu Sara</label>
+                    <input type="text" name="phoneSara" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label>Nomor Telepon/WA Bu Ana</label>
+                    <input type="text" name="phoneAna" required>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group-admin">
+                    <label>Username Facebook</label>
+                    <input type="text" name="facebook" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label>Link URL Facebook</label>
+                    <input type="url" name="facebookUrl" required>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group-admin">
+                    <label>Username Instagram</label>
+                    <input type="text" name="instagram" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label>Link URL Instagram</label>
+                    <input type="url" name="instagramUrl" required>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group-admin">
+                    <label>Alamat Lengkap Sekolah</label>
+                    <input type="text" name="address" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label>Email Resmi</label>
+                    <input type="email" name="email" required>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-primary-sm" style="padding: 10px 20px;">
+                  Simpan Info Kontak
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- ================= TAB 10: AKUN ADMIN ================= -->
+          <div class="admin-tab-pane" id="tab-account">
+            <div class="panel-card" style="max-width: 500px;">
+              <div class="panel-card-header">
+                <h3>Ubah Username & Password Admin</h3>
+              </div>
+              <form id="accountForm">
+                <div class="form-group-admin">
+                  <label>Username Baru</label>
+                  <input type="text" name="newUsername" placeholder="Biarkan kosong jika tidak diubah">
+                </div>
+                <div class="form-group-admin">
+                  <label>Password Lama *</label>
+                  <input type="password" name="oldPassword" required>
+                </div>
+                <div class="form-group-admin">
+                  <label>Password Baru</label>
+                  <input type="password" name="newPassword" placeholder="Password baru">
+                </div>
+                <div class="form-group-admin">
+                  <label>Konfirmasi Password Baru</label>
+                  <input type="password" name="confirmPassword" placeholder="Ulangi password baru">
+                </div>
+                <button type="submit" class="btn-primary-sm">Perbarui Akun</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: EDIT STATUS PENDAFTAR PPDB ================= -->
+  <div class="admin-modal" id="editRegModal">
+    <div class="admin-modal-card">
+      <div class="panel-card-header">
+        <h3>Kelola Status Pendaftar</h3>
+        <button class="btn-action-icon" onclick="closeAdminModal('editRegModal')">&times;</button>
+      </div>
+      <form id="editRegForm">
+        <input type="hidden" name="regId">
+        <div style="background: #f8fafc; padding: 14px; border-radius: 8px; margin-bottom: 16px; font-size: 13px; line-height: 1.6;">
+          <div><strong id="editRegNo" style="color: #0a5c36; font-size: 15px;"></strong></div>
+          <div style="font-weight: 700; font-size: 14px;" id="editRegName"></div>
+          <div id="editRegDetails" style="margin-top: 8px; font-size: 12px; color: #475569;"></div>
+        </div>
+
+        <div class="form-group-admin">
+          <label>Ubah Status Pendaftaran:</label>
+          <select name="regStatus" required>
+            <option value="Menunggu Verifikasi">Menunggu Verifikasi</option>
+            <option value="Diterima">Diterima</option>
+            <option value="Perlu Lengkapi Berkas">Perlu Lengkapi Berkas</option>
+            <option value="Ditolak">Ditolak</option>
+          </select>
+        </div>
+
+        <div class="form-group-admin">
+          <label>Catatan Panitia untuk Calon Siswa:</label>
+          <textarea name="regNotes" rows="3" placeholder="Contoh: Berkas telah diverifikasi, silakan daftar ulang pada tanggal..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px;">
+          <button type="button" class="btn-outline-sm" onclick="closeAdminModal('editRegModal')">Batal</button>
+          <button type="submit" class="btn-primary-sm">Simpan Perubahan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: TAMBAH / EDIT BERITA ================= -->
+  <div class="admin-modal" id="newsModal">
+    <div class="admin-modal-card" style="max-width: 750px;">
+      <div class="panel-card-header">
+        <h3 id="newsModalTitle">Posting Berita Baru</h3>
+        <button class="btn-action-icon" onclick="closeAdminModal('newsModal')">&times;</button>
+      </div>
+      <form id="newsForm">
+        <input type="hidden" name="newsId">
+        
+        <div class="form-group-admin">
+          <label>Judul Berita *</label>
+          <input type="text" name="title" required placeholder="Contoh: SMK Wihdatul Ummah Gelar Workshop AI">
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group-admin">
+            <label>Kategori Berita</label>
+            <select name="category" required>
+              <option value="Pelatihan">Pelatihan</option>
+              <option value="Prestasi">Prestasi</option>
+              <option value="Kegiatan">Kegiatan</option>
+              <option value="Kesiswaan">Kesiswaan</option>
+              <option value="Pengumuman">Pengumuman</option>
+            </select>
+          </div>
+          <div class="form-group-admin">
+            <label>Tanggal Rilis</label>
+            <input type="text" name="date" required placeholder="Contoh: 28 Oktober 2026">
+          </div>
+        </div>
+
+        <div class="form-group-admin">
+          <label>Gambar / Thumbnail Berita</label>
+          <input type="text" id="newsImageInput" name="image" placeholder="URL Gambar atau unggah dari laptop" required style="margin-bottom: 6px;">
+          <div style="background: #f8fafc; padding: 10px; border: 1px dashed #cbd5e1; border-radius: 8px; margin-bottom: 8px;">
+            <label style="font-size: 11px; font-weight: 700; color: #475569;">Pilih File Foto:</label>
+            <input type="file" accept="image/*" onchange="uploadImageFile(this, 'newsImageInput', 'newsImagePreview')">
+          </div>
+          <img id="newsImagePreview" src="/images/banner-reference.jpg" style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px;">
+        </div>
+
+        <div class="form-group-admin">
+          <label>Ringkasan Singkat (Summary)</label>
+          <input type="text" name="summary" placeholder="Ringkasan 1-2 kalimat untuk preview">
+        </div>
+
+        <div class="form-group-admin">
+          <label>Konten Lengkap Berita *</label>
+          <textarea name="content" rows="7" required placeholder="Tuliskan berita lengkap di sini..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button type="button" class="btn-outline-sm" onclick="closeAdminModal('newsModal')">Batal</button>
+          <button type="submit" class="btn-primary-sm">Simpan Berita</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: EDIT PROGRAM SEKOLAH CARD ================= -->
+  <div class="admin-modal" id="progCardModal">
+    <div class="admin-modal-card">
+      <div class="panel-card-header">
+        <h3>Edit Kartu Program Sekolah</h3>
+        <button class="btn-action-icon" onclick="closeAdminModal('progCardModal')">&times;</button>
+      </div>
+      <form id="progCardForm">
+        <input type="hidden" name="progId">
+        <div class="form-group-admin">
+          <label>Judul Program</label>
+          <input type="text" name="title" required>
+        </div>
+        <div class="form-group-admin">
+          <label>Gambar Kartu (URL atau Upload Baru)</label>
+          <input type="text" id="progCardImageInput" name="image" required style="margin-bottom: 6px;">
+          <div style="background: #f8fafc; padding: 8px; border: 1px dashed #cbd5e1; border-radius: 6px; margin-bottom: 6px;">
+            <input type="file" accept="image/*" onchange="uploadImageFile(this, 'progCardImageInput', 'progCardImagePreview')">
+          </div>
+          <img id="progCardImagePreview" src="" style="width: 100%; max-height: 160px; object-fit: cover; border-radius: 8px;">
+        </div>
+        <div class="form-group-admin">
+          <label>Deskripsi Program</label>
+          <textarea name="desc" rows="3"></textarea>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button type="button" class="btn-outline-sm" onclick="closeAdminModal('progCardModal')">Batal</button>
+          <button type="submit" class="btn-primary-sm">Perbarui Kartu</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: FASILITAS ================= -->
+  <div class="admin-modal" id="fasilitasModal">
+    <div class="admin-modal-card">
+      <div class="panel-card-header">
+        <h3 id="fasModalTitle">Fasilitas Sekolah</h3>
+        <button class="btn-action-icon" onclick="closeAdminModal('fasilitasModal')">&times;</button>
+      </div>
+      <form id="fasilitasForm">
+        <input type="hidden" name="fasId">
+        <div class="form-group-admin">
+          <label>Nama Fasilitas *</label>
+          <input type="text" name="name" required placeholder="Contoh: Lab. Multimedia">
+        </div>
+        <div class="form-group-admin">
+          <label>Ikon Fasilitas (Pilihan: laptop, moon, wind, wifi, dribbble, parking, camera, tv, etc.)</label>
+          <input type="text" name="icon" placeholder="laptop">
+        </div>
+        <div class="form-group-admin">
+          <label>Deskripsi Singkat</label>
+          <textarea name="desc" rows="3"></textarea>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button type="button" class="btn-outline-sm" onclick="closeAdminModal('fasilitasModal')">Batal</button>
+          <button type="submit" class="btn-primary-sm">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

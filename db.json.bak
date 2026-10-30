@@ -1,0 +1,269 @@
+{
+  "settings": {
+    "schoolName": "SMK WIHDATUL UMMAH",
+    "schoolSub": "SEKOLAH MENENGAH KEJURUAN",
+    "tagline": "Berkarakter, Kreatif, dan Siap Bersaing di Dunia Kerja",
+    "address": "Jl. Bromo 2 Raya No.51, Kel. Banjarsari, Surakarta",
+    "phoneSara": "0895 3599 5604",
+    "phoneAna": "0813 3604 3338",
+    "facebook": "ponpes wihdatulummah",
+    "facebookUrl": "https://facebook.com/ponpes.wihdatulummah",
+    "instagram": "smkponpes_wihdatulummah",
+    "instagramUrl": "https://instagram.com/smkponpes_wihdatulummah",
+    "email": "info@smkwihdatulummah.sch.id",
+    "heroBadge": "Selamat Datang di",
+    "heroTitle": "SMK WIHDATUL UMMAH",
+    "heroSubtitle": "Berkarakter, Kreatif, dan Siap Bersaing di Dunia Kerja",
+    "heroCtaText": "Kenali Lebih Dekat",
+    "heroSlogan": "Saatnya Bergabung Jadi Bagian dari Sekolah Hebat!",
+    "heroImage": "/images/banner-reference.jpg",
+    "highlights": [
+      "Program Unggulan",
+      "Fasilitas Modern",
+      "Tenaga Pendidik Profesional",
+      "Lulusan Berkualitas"
+    ],
+    "googleFormEmbedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc3wG2v1lR7Y_SAMPLE_FORM_ID/viewform?embedded=true",
+    "googleFormPublicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc3wG2v1lR7Y_SAMPLE_FORM_ID/viewform",
+    "googleSheetViewUrl": "https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit?usp=sharing",
+    "ppdbStatus": "Buka",
+    "academicYear": "2026/2027",
+    "ppdbMode": "both"
+  },
+  "profile": {
+    "namaKepala": "Herlambang Gilang S.N., S.Kom., M.M.",
+    "nipKepala": "-",
+    "fotoKepala": "/uploads/img-1793202041223-141833418.jpg",
+    "sambutanKepala": "Assalamu'alaikum Warahmatullahi Wabarakatuh.\n\nSelamat datang di website resmi SMK Wihdatul Ummah Surakarta. Kami bersyukur kehadirat Allah SWT yang telah memberikan rahmat dan hidayah-Nya. SMK Wihdatul Ummah hadir sebagai lembaga pendidikan kejuruan yang memadukan keunggulan kompetensi vokasi digital dan industri dengan pembentukan karakter santri yang berakhlakul karimah.\n\nDengan kurikulum upskilling yang adaptif, tenaga pendidik yang berdedikasi, serta fasilitas modern, kami berkomitmen mendampingi setiap peserta didik untuk menjadi insan yang cerdas, kreatif, berintegritas, dan siap bersaing di dunia kerja maupun melanjutkan ke jenjang pendidikan tinggi.\n\nWassalamu'alaikum Warahmatullahi Wabarakatuh.",
+    "visi": "Menjadi Sekolah Menengah Kejuruan Islam Terdepan yang Menghasilkan Generasi Berkarakter Qur'ani, Mandiri, Berkompetensi Digital, dan Siap Menembus Dunia Industri Global.",
+    "misi": [
+      "Menanamkan nilai-nilai keislaman dan akhlak mulia dalam setiap aktivitas pembelajaran.",
+      "Melaksanakan program pelatihan upskilling di bidang teknologi informasi, multimedia, dan desain secara intensif.",
+      "Menyediakan fasilitas sarana dan prasarana belajar berstandar industri modern.",
+      "Membangun kemitraan strategis dengan dunia usaha dan industri (DUDI) untuk penyaluran magang dan kerja.",
+      "Menumbuhkan jiwa kewirausahaan (entrepreneurship) santri berbasis teknologi digital."
+    ],
+    "sejarah": "SMK Wihdatul Ummah didirikan dengan komitmen untuk menjawab tantangan zaman akan kebutuhan generasi muda yang tidak hanya menguasai keterampilan vokasi industri modern, tetapi juga memiliki landasan tauhid dan akhlak yang kokoh. Terletak di pusat kota Surakarta, sekolah ini terus berkembang menjadi rujukan pendidikan kejuruan unggulan yang dipercaya masyarakat."
+  },
+  "upskilling": [
+    "Web Design",
+    "Video & Fotografi",
+    "Graphic Design",
+    "Audio & Video Editing",
+    "Komputer Dasar",
+    "Digital Marketing"
+  ],
+  "ekstrakurikuler": [
+    "Fotografi, Cinematografi",
+    "Pramuka",
+    "Public Speaking",
+    "PMR",
+    "Desain Grafis",
+    "Tahfidz"
+  ],
+  "programSekolah": [
+    {
+      "id": 1,
+      "title": "Siswa Berprestasi Akademik",
+      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&auto=format&fit=crop&q=80",
+      "icon": "trophy",
+      "desc": "Program pembinaan intensif bagi siswa berprestasi di bidang sains, olimpiade mata pelajaran, dan kompetensi keahlian kejuruan dengan fasilitas beasiswa khusus."
+    },
+    {
+      "id": 2,
+      "title": "Siswa Berprestasi Non-Akademik",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=80",
+      "icon": "star",
+      "desc": "Wadah pengembangan bakat siswa di bidang kepemimpinan, olahraga, seni multimedia, public speaking, dan kompetisi kreatif tingkat regional hingga nasional."
+    },
+    {
+      "id": 3,
+      "title": "Siswa Kurang Mampu (Afirmasi)",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80",
+      "icon": "users",
+      "desc": "Bantuan pendidikan penuh dan program asrama santri untuk siswa berpotensi dari keluarga prasejahtera agar mendapatkan hak pendidikan berkualitas yang setara."
+    },
+    {
+      "id": 4,
+      "title": "Kategori Khusus",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=80",
+      "icon": "award",
+      "desc": "Jalur beasiswa Tahfidzul Qur'an minimal 5 Juz, putra-putri guru, dan kelas industri khusus dengan jaminan uji sertifikasi kompetensi keahlian BNSP."
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1793197445412",
+      "title": "Workshop Desain Grafis & Pemrograman Web SMK Wihdatul Ummah",
+      "category": "Pelatihan",
+      "date": "28 Oktober 2026",
+      "image": "/images/banner-reference.jpg",
+      "summary": "Siswa diajarkan pengembangan aplikasi web modern dan desain UI/UX interaktif.",
+      "content": "Kegiatan workshop teknologi informasi ini diikuti oleh seluruh santri dan siswa SMK Wihdatul Ummah untuk meningkatkan kompetensi keahlian siap kerja."
+    },
+    {
+      "id": "news-1",
+      "title": "SMK Wihdatul Ummah Gelar Pelatihan Digital Marketing",
+      "category": "Pelatihan",
+      "date": "25 Agustus 2026",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop&q=80",
+      "summary": "Siswa dibekali keahlian strategi pemasaran digital, SEO, dan optimasi media sosial oleh praktisi industri.",
+      "content": "Surakarta — SMK Wihdatul Ummah sukses menyelenggarakan Pelatihan Digital Marketing untuk seluruh siswa kelas XI dan XII. Pelatihan ini menghadirkan praktisi profesional yang telah berpengalaman di industri digital advertising.\n\nMelalui kegiatan ini, siswa diajarkan cara mengelola kampanye iklan online, riset kata kunci, optimasi konten video, hingga strategi konversi penjualan. Kepala SMK Wihdatul Ummah menegaskan bahwa keahlian digital marketing adalah salah satu bekal paling esensial bagi lulusan agar langsung dapat berkarya di dunia kerja maupun membangun agensi digital secara mandiri."
+    },
+    {
+      "id": "news-2",
+      "title": "Siswa SMK Wihdatul Ummah Raih Juara Lomba Tingkat Kabupaten",
+      "category": "Prestasi",
+      "date": "20 Agustus 2026",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800&auto=format&fit=crop&q=80",
+      "summary": "Karya inovatif multimedia dan desain grafis siswa berhasil memboyong Juara 1 pada LKS Tingkat Kabupaten.",
+      "content": "Prestasi membanggakan kembali ditorehkan oleh siswa SMK Wihdatul Ummah. Pada ajang Lomba Keterampilan Siswa (LKS) tingkat Kabupaten yang berlangsung pekan lalu, perwakilan sekolah berhasil menyabet Juara 1 untuk cabang Graphic Design Technology dan Juara 2 untuk Web Technologies.\n\nTorehan ini membuktikan kualitas kurikulum upskilling yang diterapkan di SMK Wihdatul Ummah terbukti unggul dan kompetitif."
+    },
+    {
+      "id": "news-3",
+      "title": "Kegiatan P5: Projek Penguatan Profil Pelajar Pancasila",
+      "category": "Kegiatan",
+      "date": "15 Agustus 2026",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80",
+      "summary": "Pameran hasil karya P5 mengusung tema Kearifan Lokal dan Rekayasa Teknologi Ramah Lingkungan.",
+      "content": "Dalam rangka implementasi Kurikulum Merdeka, SMK Wihdatul Ummah menggelar Gelar Karya Projek Penguatan Profil Pelajar Pancasila (P5). Seluruh siswa dari berbagai tingkatan memamerkan produk-produk kreatif hasil riset dan rekayasa mereka, mulai dari kemasan produk ramah lingkungan berbasis alam lokal hingga media pembelajaran digital interaktif."
+    },
+    {
+      "id": "news-4",
+      "title": "Semarak Lomba 17 Agustus di SMK Wihlatul Ummah",
+      "category": "Kesiswaan",
+      "date": "10 Agustus 2026",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80",
+      "summary": "Keceriaan dan semangat kemerdekaan dirayakan dengan berbagai lomba tradisional dan turnamen e-sport edukatif.",
+      "content": "Menyambut HUT Republik Indonesia, OSIS SMK Wihdatul Ummah menggelar berbagai perlombaan menarik antar kelas. Selain lomba ketangkasan tradisional seperti tarik tambang dan balap karung, juga digelar lomba desain poster kemerdekaan dan video cinematic profil perjuangan pahlawan nasional."
+    }
+  ],
+  "fasilitas": [
+    {
+      "id": 1,
+      "name": "Lab. Komputer",
+      "icon": "laptop",
+      "desc": "Spesifikasi PC modern untuk web design, programming, dan rendering video."
+    },
+    {
+      "id": 2,
+      "name": "Masjid",
+      "icon": "moon",
+      "desc": "Pusat ibadah, pembinaan akhlak, dan kajian tahfidz Al-Qur'an santri."
+    },
+    {
+      "id": 3,
+      "name": "Ruang Kelas Ber-AC",
+      "icon": "wind",
+      "desc": "Ruang kelas sejuk, bersih, dan dilengkapi proyektor multimedia modern."
+    },
+    {
+      "id": 4,
+      "name": "Akses Internet (WiFi)",
+      "icon": "wifi",
+      "desc": "Jaringan internet berkecepatan tinggi di seluruh area sekolah & asrama."
+    },
+    {
+      "id": 5,
+      "name": "Lapangan Olahraga",
+      "icon": "dribbble",
+      "desc": "Fasilitas olahraga futsal, basket, bulu tangkis, dan senam santri."
+    },
+    {
+      "id": 6,
+      "name": "Tempat Parkir Luas",
+      "icon": "parking",
+      "desc": "Area parkir kendaraan tertata rapi, beratap, dan ber-CCTV 24 jam."
+    },
+    {
+      "id": 7,
+      "name": "Ruang Studio",
+      "icon": "camera",
+      "desc": "Studio rekaman audio visual, podcast, green screen, dan fotografi."
+    },
+    {
+      "id": 8,
+      "name": "Proyektor",
+      "icon": "tv",
+      "desc": "Perangkat proyektor interaktif di setiap ruang teori dan workshop kejuruan."
+    }
+  ],
+  "registrations": [
+    {
+      "id": "reg-1793197415911",
+      "registrationNo": "PPDB-2026-004",
+      "fullName": "Santri Baru Pengujian",
+      "nisn": "0099887766",
+      "gender": "Laki-laki",
+      "birthPlace": "Surakarta",
+      "birthDate": "2010-05-10",
+      "originSchool": "SMP IT Al-Madinah",
+      "majorChoice": "Web Design & Digital Marketing",
+      "parentName": "Ahmad Zaki",
+      "phone": "08123456789",
+      "address": "Jl. Slamet Riyadi No. 99, Solo",
+      "pathway": "Prestasi",
+      "status": "Diterima",
+      "createdAt": "2026-10-28T14:23:35.911Z",
+      "notes": "Pendaftaran mandiri melalui website. Mohon simpan bukti nomor pendaftaran ini."
+    },
+    {
+      "id": "reg-1730001",
+      "registrationNo": "PPDB-2026-001",
+      "fullName": "Muhammad Fatih Al-Farisi",
+      "nisn": "0082910293",
+      "gender": "Laki-laki",
+      "birthPlace": "Surakarta",
+      "birthDate": "2010-04-15",
+      "originSchool": "SMP Negeri 4 Surakarta",
+      "majorChoice": "Web Design & Digital Marketing",
+      "parentName": "Bambang Sudarmono",
+      "phone": "081298765432",
+      "address": "Jl. Slamet Riyadi No. 120, Surakarta",
+      "pathway": "Reguler",
+      "status": "Diterima",
+      "createdAt": "2026-10-25T08:30:00.000Z",
+      "notes": "Berkas lengkap, telah lulus wawancara dan tes kompetensi dasar."
+    },
+    {
+      "id": "reg-1730002",
+      "registrationNo": "PPDB-2026-002",
+      "fullName": "Aisyah Nur Salsabila",
+      "nisn": "0083456781",
+      "gender": "Perempuan",
+      "birthPlace": "Karanganyar",
+      "birthDate": "2010-08-22",
+      "originSchool": "MTs Negeri 1 Karanganyar",
+      "majorChoice": "Graphic Design & Multimedia",
+      "parentName": "Hartono",
+      "phone": "085712349876",
+      "address": "Jl. Lawu No. 45, Karanganyar",
+      "pathway": "Prestasi",
+      "status": "Menunggu Verifikasi",
+      "createdAt": "2026-10-26T14:15:00.000Z",
+      "notes": "Sertifikat Juara 2 Desain Poster Tingkat Kabupaten dilampirkan."
+    },
+    {
+      "id": "reg-1730003",
+      "registrationNo": "PPDB-2026-003",
+      "fullName": "Rizky Ramadhan",
+      "nisn": "0089123847",
+      "gender": "Laki-laki",
+      "birthPlace": "Sukoharjo",
+      "birthDate": "2010-11-05",
+      "originSchool": "SMP Islam Al-Abidin Surakarta",
+      "majorChoice": "Video & Fotografi (Sinematografi)",
+      "parentName": "Joko Susilo",
+      "phone": "082133445566",
+      "address": "Baki, Sukoharjo",
+      "pathway": "Afirmasi",
+      "status": "Perlu Lengkapi Berkas",
+      "createdAt": "2026-10-27T10:00:00.000Z",
+      "notes": "Mohon lampirkan fotokopi Kartu Indonesia Pintar (KIP) / SKTM."
+    }
+  ],
+  "adminUser": {
+    "username": "admin",
+    "password": "admin123"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "smk-wihdatul-ummah",
+  "version": "1.0.0",
+  "description": "Website Resmi SMK Wihdatul Ummah",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "multer": "^2.5.0"
+  }
+}
